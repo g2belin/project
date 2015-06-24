@@ -1,0 +1,54 @@
+body {
+	font-family: 'Ropa Sans', sans-serif; 
+	color:darkgrey; 
+	font-size:30px; 
+}
+
+.login {
+	border: 1px solid;
+	margin: 25px; 
+	padding: 25px; 
+	text-align: right;
+	background-color: #E6E6E6;
+}
+
+ul, li {
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+}
+
+aside {
+	float: left;
+	margin-left: 10px;
+}
+
+.userinput {
+	background:lightyellow; 
+	width:250px; 
+	border-radius:3px 0 0 3px; 
+	font-family: 'Ropa Sans', sans-serif; 
+	border:solid 1px lightgrey;  
+	color:grey; 
+	height:30px; 
+	padding-left:10px; 
+	font-size:16px
+}
+
+.button {
+	border:none; 
+	background:#0099CC; 
+	border-bottom:solid 4px #006699; 
+	font-family: 'Ropa Sans', sans-serif; 
+	height:30px; 
+	width:100%; 
+	padding:0 10px; 
+	border-radius:3px; 
+	font-size:14px; 
+	color:White;
+}
+
+section {
+	width: 500px;
+	text-align: right;
+}
