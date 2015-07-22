@@ -2,45 +2,72 @@
 <html>
 <head>
 	<title></title>
-	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
-	<link href='login-style.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 
-	<label for="profile">PROFILE</label>
+<br/>
 
-	<section>
-		<form action="/profile/edit" method="POST">
-			<ul>
-				<li>
-					<label for="email2">Email: </label>
-					<input type="email" name="email" class="userinput" placeholder="Enter Your Email" id="email2"/>
-				</li>
-				<li>
-					<label for="password2">Password: </label>
-					<input type="password" name="password" class="userinput" placeholder="Enter Your Password" id="password2"/>
-				</li>
-				<li>
-					<label for="gender">Gender: </label>
-					<select name="gender" class="userinput" id="gender">
+  <!--style="background-color:blue;"-->
+ <div class="container-fluid">
+
+	 <form class="form-horizontal" action="/profile/edit" method="POST">
+
+	 	<!-- form-group is a row, this is the row1 -->
+		  <div class="form-group">
+		  	<!-- 1st item in the row -->
+	    	<label for="email" class="col-sm-2 control-label"> Email: </label>
+
+	    	<!-- 2nd item in the row -->
+	    	<div class="col-sm-3">
+					<input type="email" name="email" class="form-control" placeholder="Enter Your Email" id="email"/>
+				</div>
+
+				<!-- 3rd item in the row -->
+	    	<label for="password" class="col-sm-2 control-label"> Password: </label>
+
+	    	<!-- 4th item in the row -->
+	    	<div class="col-sm-3">
+					<input type="password" name="password" class="form-control" placeholder="Enter Your Password" id="password"/>
+				</div>
+			</div>
+			<!-- row1 ended -->
+
+			<!-- row2 -->
+			<div class="form-group">
+					<label for="gender" class="col-sm-2 col-xs-1 control-label">Gender: </label>
+					<div class="col-sm-8">
+					<select name="gender" class="form-control" id="gender">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
 					</select>
-				</li>
-				<li>
-					<label for="fname">First name: </label>
-					<input type="fname" name="fname" class="userinput" placeholder="Enter Your First name" id="fname"/>
-				</li>
-				<li>
-					<label for="lname">Last name: </label>
-					<input type="lname" name="lname" class="userinput" placeholder="Enter Your Last name" id="lname"/>
-				</li>
+	    	</div>
+	    </div>
+	    <!--row2 ended -->
 
-				<li>
-					<input type="submit" value="UPDATE" class="button">
-				</li>
+	    <!--row3 -->
+	   	<div class="form-group">
+	    	<label for="fname" class="col-sm-2 control-label"> First name: </label>
+	    	<div class="col-sm-3">
+					<input type="fname" name="fname" class="form-control" placeholder="Enter Your First name" id="fname"/>
+				</div>
+	    	<label for="lname" class="col-sm-2 control-label"> Last name: </label>
+	    	<div class="col-sm-3">
+					<input type="lname" name="lname" class="form-control" placeholder="Enter Your Last name" id="lname"/>
+				</div>
+			</div>
+			<!-- row3 ended -->
+
+			<!-- row4 -->
+	   	<div class="form-group">
+	   	  <div class="col-sm-2 col-sm-offset-2">
+					<input type="submit" value="UPDATE" class="btn btn-default">
+				</div>
+			</div>
+			<!-- row4 ended -->
+
 		</form>
-	</section>
+</div>
 
 </body>
 </html>
